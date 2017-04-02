@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Java Script DOM - Samples</title>
-        
-    </head>
-    <body>
 
-       <section id="sectionFirst">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script DOM - Samples</title>
+    <link rel="stylesheet" href="css/style.css">
 
-            <header>
-                <!-- Do zadania 6 dodajemy tekst w nagłówku H1 - "Nagłówek strony" -->
-                <h1 id="main-header">Header</h1> 
-            </header>
+</head>
 
-            <div id="parFirst">
-                <p onclick="alert('z paragrafu');">Tekst w tym akapicie.</p>
-                <!-- W 6 zadaniu dodajemy do linku poniżej atrybut onclick="alert('kliknięto link');" -->
-                <a class="link" href="#">Akapit Link 1</a><br>
-                <a class="link" href="https://akademia108.pl">Akapit Link 2</a>
-            </div>
+<body>
 
-            <div id="parSecond" >
-                <p>Tekst w tym akapicie.</p>
-            </div>
+    <section id="sectionFirst">
 
-            <a class="link" href="http://akademia108.pl">Link 1</a>
-            <a class="link" href="#">Link 2</a>
-            <a class="link superlink" href="#">Link 3</a>
-            <a class="link superlink" href="#">Link 4</a>
+        <header>
+            <!-- Do zadania 6 dodajemy tekst w nagłówku H1 - "Nagłówek strony" -->
+            <h1 id="main-header">Header</h1>
+        </header>
 
-        </section>
+        <div id="parFirst">
+            <p onclick="nowaFunkcja();">Tekst w tym akapicie.</p>
+            <!-- W 6 zadaniu dodajemy do linku poniżej atrybut onclick="alert('kliknięto link');" -->
+            <a class="link" href="#">Akapit Link 1</a><br>
+            <a class="link" href="https://akademia108.pl">Akapit Link 2</a>
+        </div>
 
-        <script src="js/1-model-dom.js"></script>
-        <script src="js/2-znajdowanie-elementow.js"></script>
-        <script src="js/3-wezly-nodes.js"></script>
-    </body>
+        <div id="parSecond">
+            <p>Tekst w tym akapicie.</p>
+        </div>
+
+        <a class="link" href="http://akademia108.pl">Link 1</a>
+        <a class="link" href="#">Link 2</a>
+        <a class="link superlink" href="#">Link 3</a>
+        <a class="link superlink" href="#">Link 4</a>
+
+        <div id="parThird">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolor illum molestias aut aperiam similique itaque, dolore ipsa doloribus culpa a consectetur enim in iusto amet adipisci possimus reprehenderit. Unde!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolor illum molestias aut aperiam similique itaque, dolore ipsa doloribus culpa a consectetur enim in iusto amet adipisci possimus reprehenderit. Unde!</p>
+        </div>
+        <div id="parFourth">
+            <form id="formularz" onsubmit="pobierzImie(event)">
+                <label for="fname">Imię: </label>
+                <input type="text" name="fname" /><br />
+                <label for="lname">Nazwisko: </label>
+                <input type="text" name="lname" /><br />
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- <script src="js/1-model-dom.js"></script>
+    <script src="js/2-znajdowanie-elementow.js"></script>
+    <script src="js/3-wezly-nodes.js"></script>-->
+    <script src="js/4-dom-html-css.js"></script>
+    <script src="js/5-zdarzenia.js"></script>
+</body>
+
 </html>
